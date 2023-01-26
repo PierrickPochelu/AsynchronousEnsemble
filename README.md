@@ -409,7 +409,7 @@ tf.keras.backend.clear_session()
     Ensemble accuracy: 0.19 inference time: 15.02
 
 
-##Experimental results
+## Experimental results
 
 Results obtained with Google Colab.
  
@@ -419,7 +419,7 @@ Results obtained with Google Colab.
 | TPU | 36.37 sec | 25.98 sec | 20.78 sec |
 | CPU | 31.84 sec | 21.72 sec | 15.02 sec |
 
-##Conclusion 
+## Conclusion 
 The asynchronous ensemble designs exploits the underlying parallelism. 
 
 Multiprocessing design requires each process know the data. Thus, memory consumption for data and buses communication are multiplied. In addition of that, 1 Tensorflow session may optimize more efficiently the assignment of tensors and cores than independant sessions. However, multiple independant process may allow more flexibility for ML applications, like predicting with different inference frameworks (e.g., Torch, Tensorflow, JAX, ...).
