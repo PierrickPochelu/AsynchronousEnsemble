@@ -1,6 +1,6 @@
 ## Asynchronous ensembles
 
-Different simple asynchronous ensemble designs are compared.
+Different asynchronous ensemble designs are compared.
 
 
 Given `n` processes (predicting on CIFAR10 images), `m` devices (CPU, GPU, or TPU), and the given assignment map `n[i]->m[j]`. We evaluate different design strategies: 
@@ -86,7 +86,7 @@ test_labels = test_labels[:NB_INFERENCE_SAMPLES]
     170498071/170498071 [==============================] - 2s 0us/step
 
 
-##Strategy "Sequential"
+## Strategy "Sequential"
 
 
 ```python
@@ -328,8 +328,7 @@ tf.keras.backend.clear_session()
     Ensemble accuracy: 0.1 inference time: 21.72
 
 
-##Strategy "1 TF Session"
-.
+## Strategy "1 TF Session"
 
 
 ```python
@@ -427,6 +426,3 @@ Multiprocessing design requires each process know the data. Thus, memory consump
 We may expect the results vary according models size, hardware, ... MIG technology (multi-instances) may offer better performance and deterministic performance.
 
 
-```python
-
-```
