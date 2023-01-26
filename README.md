@@ -1,4 +1,4 @@
-#Asynchronous ensembles
+## Asynchronous ensembles
 
 Different simple asynchronous ensemble designs are compared.
 
